@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="quiz-tab" id="quiz-section">
+        <form id="quiz">
+            <h1 id="question"></h1>
+            <h2 id="question_number"></h2>
+            <div class="quiz-answer-container">
+                <div class="quiz-answer">
+                    <input id="answer1" name="answers" />
+                    <label id="answerlabel1" for="answer1"></label>
+                </div>
+                <div class="quiz-answer">
+                    <input id="answer2" name="answers" />
+                    <label id="answerlabel2" for="answer2"></label>
+                </div>
+                <div class="quiz-answer">
+                    <input id="answer3" name="answers" />
+                    <label id="answerlabel3" for="answer3"></label>
+                </div>
+                <div class="quiz-answer">
+                    <input id="answer4" name="answers" />
+                    <label id="answerlabel4" for="answer4"></label>
+                </div>
+            </div>
+            <p>
+                <button class="quiz-submit" id="submitAnswerButton" onclick="submitAnswer()">Submit</button>
+                <button class="quiz-submit" id="nextQuestionButton" onclick="nextQuestion()">Next</button>
+            </p>
+            <h3 id="pleaseSelectAnswer" >Please select an answer</h3>
+        </form>
+        <div id="score" style="display: none;">
+            <h1>You scored</h1>
+            <h1 id="scorePercentage"></h1>
+            <h2 id="number"></h2>
+            <p>
+                <button class="quiz-submit" id="playAgainButton" onclick="playAgain()">Play again</button>
+            </p>
+        </div>
+    </div>
+    <script src="code.js">
+
+    </script>
+</body>
+
+</html>

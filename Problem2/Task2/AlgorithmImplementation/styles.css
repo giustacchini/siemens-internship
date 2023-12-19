@@ -1,0 +1,104 @@
+html, body{
+    height: 100%;
+    font-family: 'Chakra Petch';
+    text-transform: uppercase;
+    font-size: 1em;
+    background-color: darkblue;
+}
+body{
+    margin: 0;
+}
+.quiz-tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    text-align: center;
+}
+
+#quiz{
+    width: 80%;
+    color:white;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-answer-container{
+    width: 50%;
+    display: grid;
+    gap: 0.5em;
+}
+
+
+input {
+    display: none;
+}
+
+input + label{
+    display: inline-block;
+    background-color:lightsteelblue;
+    color: black;
+    width: 100%;
+    padding: 8px 4px; 
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+input + label:hover{
+    background-color:lightblue;
+}
+
+input:checked + label{
+    background-color: #DDD92A;
+}
+
+.quiz-submit{
+    background-color: white;
+    font-family: 'Chakra Petch';
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.quiz-submit:hover{
+    background-color: #C5C3C6;
+}
+
+#nextQuestionButton{
+    display:none;
+}
+
+    
+#score{
+    width: 80%;
+    color:white;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#scorePercentage{
+    font-size: 10vmax;
+    padding:0;
+    margin: 0;
+}
+
+#pleaseSelectAnswer{
+    display: none;
+    background-color: #D21B1B;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 2.5%;
+    border-radius: 15px;
+}
